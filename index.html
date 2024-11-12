@@ -17,6 +17,9 @@
 <body>
     <h1>teste</h1>
     <button id="meu-botao">Clique Aqui</button>
+    <a href="https://www.exemplo.com" onclick="gtag('event', 'click', { 'event_category': 'link', 'event_label': 'exemplo-link', 'value': 1 });">
+        Visite nosso site
+      </a>
     <script>
         document.getElementById('meu-botao').addEventListener('click', function() {
           gtag('event', 'click', {
