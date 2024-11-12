@@ -16,6 +16,15 @@
 </head>
 <body>
     <h1>teste</h1>
-    
+    <button id="meu-botao">Clique Aqui</button>
+    <script>
+        document.getElementById('meu-botao').addEventListener('click', function() {
+          gtag('event', 'click', {
+            'event_category': 'button',
+            'event_label': 'meu-botao',
+            'value': 1
+          });
+        });
+        </script>
 </body>
 </html>
